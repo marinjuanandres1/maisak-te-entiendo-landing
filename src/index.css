@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-black-deep: #0A0A0A;
-  --color-black-card: #111111;
-  --color-gold: #D4A853;
-  --color-gold-light: #E8C97A;
-  --color-gold-dark: #B08930;
-  --color-gold-muted: rgba(212, 168, 83, 0.15);
-  --color-white-soft: #F5F0E8;
-  --color-gray-warm: #8A8278;
+  --color-black-deep: #0b0303;
+  --color-black-card: #49250c;
+  --color-gold: #864619;
+  --color-gold-light: #f8e5b1;
+  --color-gold-dark: #5f0713;
+  --color-gold-muted: rgba(134, 70, 25, 0.15);
+  --color-white-soft: #f8e5b1;
+  --color-gray-warm: #a08060;
+  --color-burgundy: #5f0713;
 
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen min-h-[100dvh] flex-col items-center justify-center overflow-hidden px-4 py-16 sm:px-6 sm:py-24">
       {/* Ambient radial glow */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(212,168,83,0.08),transparent_70%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(134,70,25,0.10),transparent_70%)]" />
 
       {/* Decorative animated rings */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -28,7 +28,7 @@ export default function Hero() {
         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
       >
         <div
-          className="h-32 w-32 rounded-full bg-[radial-gradient(circle,rgba(212,168,83,0.18)_0%,transparent_70%)] sm:h-40 sm:w-40 md:h-72 md:w-72"
+          className="h-32 w-32 rounded-full bg-[radial-gradient(circle,rgba(134,70,25,0.22)_0%,transparent_70%)] sm:h-40 sm:w-40 md:h-72 md:w-72"
           style={{ animation: "float 8s ease-in-out infinite" }}
         />
       </motion.div>
