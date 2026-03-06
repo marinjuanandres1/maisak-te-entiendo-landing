@@ -72,7 +72,7 @@ export default function WaitingListForm() {
   return (
     <section
       id="registro"
-      className="relative flex min-h-screen min-h-[100dvh] flex-col items-center justify-center px-4 py-16 sm:px-6 sm:py-24"
+      className="relative flex min-h-[80dvh] flex-col items-center justify-center px-4 py-12 sm:px-6 sm:py-16"
     >
       {/* Ambient glow behind card */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(95,7,19,0.10),transparent_60%)] sm:h-[420px] sm:w-[420px] md:h-[500px] md:w-[500px]" />

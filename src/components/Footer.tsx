@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative px-6 pb-12 pt-16 sm:pt-20">
+    <footer className="relative px-6 pb-12 pt-8 sm:pt-10">
       <div className="mx-auto mb-12 h-px w-40 bg-gradient-to-r from-transparent via-burgundy/40 to-transparent sm:w-56" />
 
       {/* Maisak — central artist */}

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen min-h-[100dvh] flex-col items-center justify-center overflow-hidden px-4 py-16 sm:px-6 sm:py-24">
+    <section className="relative flex min-h-[85dvh] flex-col items-center justify-center overflow-hidden px-4 py-12 sm:min-h-[90dvh] sm:px-6 sm:py-20">
       {/* Ambient radial glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(95,7,19,0.12),transparent_70%)]" />
 
@@ -92,16 +92,11 @@ export default function Hero() {
         transition={{ delay: 2, duration: 1 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:bottom-10"
       >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] font-light tracking-[0.3em] text-gray-warm uppercase">
-            Scroll
-          </span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="h-6 w-px bg-gradient-to-b from-gold/50 to-transparent"
-          />
-        </div>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="h-8 w-px bg-gradient-to-b from-gold/50 to-transparent"
+        />
       </motion.div>
     </section>
   );
