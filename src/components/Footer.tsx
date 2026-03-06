@@ -32,7 +32,7 @@ export default function Footer() {
       </div>
 
       <p className="mt-12 text-center font-body text-[10px] font-light tracking-[0.25em] text-gray-warm/30 uppercase sm:text-xs">
-        Maisak &times; Nicky Jam &mdash; 2026
+        Maisak &mdash; 2026
       </p>
     </footer>
   );

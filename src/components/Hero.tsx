@@ -81,7 +81,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="font-body text-sm font-light tracking-[0.15em] text-white-soft/80 sm:text-base sm:tracking-[0.25em] md:text-lg"
         >
-          MAISAK FT. NICKY JAM
+          MAISAK
         </motion.p>
       </div>
 
