@@ -75,7 +75,7 @@ export default function WaitingListForm() {
       className="relative flex min-h-screen min-h-[100dvh] flex-col items-center justify-center px-4 py-16 sm:px-6 sm:py-24"
     >
       {/* Ambient glow behind card */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(134,70,25,0.08),transparent_60%)] sm:h-[420px] sm:w-[420px] md:h-[500px] md:w-[500px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(95,7,19,0.10),transparent_60%)] sm:h-[420px] sm:w-[420px] md:h-[500px] md:w-[500px]" />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -94,11 +94,10 @@ export default function WaitingListForm() {
             className="mx-auto mb-6 h-px w-16 bg-gold/40"
           />
           <h2 className="font-heading text-xl font-semibold text-white-soft sm:text-2xl md:text-3xl">
-            Lista de Espera
+            Registro
           </h2>
           <p className="mx-auto mt-3 max-w-xs font-body text-sm font-light leading-relaxed text-gray-warm">
-            Suscríbete para entrar a la lista de espera del evento exclusivo de
-            lanzamiento
+            Regístrate aquí para entrar en la lista
           </p>
         </div>
 
@@ -111,7 +110,7 @@ export default function WaitingListForm() {
               initial={{ opacity: 1 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="rounded-2xl border border-white/[0.06] bg-black-card/80 p-5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
+              className="rounded-2xl border border-burgundy/20 bg-black-card/90 p-5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
             >
               <div className="space-y-4 sm:space-y-5">
                 <div>
@@ -178,12 +177,12 @@ export default function WaitingListForm() {
                 disabled={sending}
                 whileHover={sending ? {} : { scale: 1.02 }}
                 whileTap={sending ? {} : { scale: 0.98 }}
-                className="group relative mt-6 w-full min-h-[48px] cursor-pointer overflow-hidden rounded-lg bg-gradient-to-r from-gold-dark via-gold to-gold-light py-4 font-body text-sm font-semibold tracking-[0.15em] text-black-deep uppercase transition-shadow duration-300 hover:shadow-lg hover:shadow-gold/20 disabled:cursor-wait disabled:opacity-70 active:scale-[0.98] sm:mt-8 sm:py-3.5"
+                className="group relative mt-6 w-full min-h-[48px] cursor-pointer overflow-hidden rounded-lg bg-gradient-to-r from-burgundy via-caramel to-gold py-4 font-body text-sm font-semibold tracking-[0.15em] text-black-deep uppercase transition-shadow duration-300 hover:shadow-lg hover:shadow-burgundy/30 disabled:cursor-wait disabled:opacity-70 active:scale-[0.98] sm:mt-8 sm:py-3.5"
               >
                 <span className="relative z-10">
                   {sending ? "Enviando..." : "Registrarme"}
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-gold-light via-gold to-gold-dark opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-r from-gold via-caramel to-burgundy opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               </motion.button>
             </motion.form>
           ) : (
@@ -213,8 +212,12 @@ export default function WaitingListForm() {
               <h3 className="font-heading text-xl font-semibold text-gold">
                 ¡Estás en la lista!
               </h3>
-              <p className="mt-2 font-body text-sm font-light text-gray-warm">
-                Te notificaremos con los detalles del evento exclusivo.
+              <p className="mt-3 font-body text-sm font-light leading-relaxed text-gray-warm">
+                Sala de Despecho Bogotá
+                <br />
+                Cra. 13a #93-91
+                <br />
+                Miércoles 18 de marzo 5pm
               </p>
             </motion.div>
           )}

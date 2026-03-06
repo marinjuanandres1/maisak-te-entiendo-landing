@@ -2,14 +2,16 @@
 
 @theme {
   --color-black-deep: #0b0303;
-  --color-black-card: #49250c;
-  --color-gold: #864619;
-  --color-gold-light: #f8e5b1;
-  --color-gold-dark: #5f0713;
-  --color-gold-muted: rgba(134, 70, 25, 0.15);
+  --color-black-card: #1a0808;
+  --color-gold: #f8e5b1;
+  --color-gold-light: #fff5e0;
+  --color-gold-dark: #864619;
+  --color-gold-muted: rgba(248, 229, 177, 0.10);
   --color-white-soft: #f8e5b1;
-  --color-gray-warm: #a08060;
+  --color-gray-warm: #b89a78;
   --color-burgundy: #5f0713;
+  --color-caramel: #864619;
+  --color-brown-deep: #49250c;
 
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;

@@ -1,37 +1,37 @@
 export default function Footer() {
   return (
-    <footer className="relative px-6 pb-10 pt-12 sm:pt-16">
-      <div className="mx-auto mb-10 h-px w-32 bg-gradient-to-r from-transparent via-gold/30 to-transparent sm:w-48" />
+    <footer className="relative px-6 pb-12 pt-16 sm:pt-20">
+      <div className="mx-auto mb-12 h-px w-40 bg-gradient-to-r from-transparent via-burgundy/40 to-transparent sm:w-56" />
 
       {/* Maisak — central artist */}
       <div className="flex justify-center">
         <img
           src="/logos/maisak_logo.png"
           alt="Maisak"
-          className="h-10 w-auto object-contain opacity-90 sm:h-14"
+          className="h-14 w-auto object-contain opacity-90 sm:h-20"
         />
       </div>
 
-      {/* Supporting brands */}
-      <div className="mx-auto mt-8 flex max-w-xs items-center justify-center gap-8 sm:max-w-sm sm:gap-12">
-        <img
-          src="/logos/billboard_logo.png"
-          alt="Billboard"
-          className="h-5 w-auto object-contain opacity-50 transition-opacity duration-300 hover:opacity-80 sm:h-6"
-        />
+      {/* Supporting brands — Billboard centered */}
+      <div className="mx-auto mt-10 flex items-center justify-center gap-5 sm:mt-12 sm:gap-7">
         <img
           src="/logos/siente_logo.png"
           alt="Siente"
-          className="h-6 w-auto object-contain opacity-50 transition-opacity duration-300 hover:opacity-80 sm:h-8"
+          className="w-10 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-12"
+        />
+        <img
+          src="/logos/billboard_logo.png"
+          alt="Billboard"
+          className="w-28 object-contain opacity-60 transition-opacity duration-300 hover:opacity-90 sm:w-36"
         />
         <img
           src="/logos/touring_logo.png"
           alt="Touring"
-          className="h-6 w-auto object-contain opacity-50 transition-opacity duration-300 hover:opacity-80 sm:h-8"
+          className="w-28 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-36"
         />
       </div>
 
-      <p className="mt-10 font-body text-[10px] font-light tracking-[0.25em] text-gray-warm/40 uppercase sm:text-xs">
+      <p className="mt-12 text-center font-body text-[10px] font-light tracking-[0.25em] text-gray-warm/30 uppercase sm:text-xs">
         Maisak &times; Nicky Jam &mdash; 2026
       </p>
     </footer>
