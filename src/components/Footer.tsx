@@ -12,8 +12,8 @@ export default function Footer() {
         />
       </div>
 
-      {/* Supporting brands — Billboard centered */}
-      <div className="mx-auto mt-10 flex items-center justify-center gap-5 sm:mt-12 sm:gap-7">
+      {/* Supporting brands */}
+      <div className="mx-auto mt-8 flex flex-wrap items-center justify-center gap-5 sm:mt-10 sm:gap-7">
         <img
           src="/logos/siente_logo.png"
           alt="Siente"
@@ -29,6 +29,7 @@ export default function Footer() {
           alt="Touring"
           className="w-28 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-36"
         />
+
       </div>
 
       <p className="mt-12 text-center font-body text-[10px] font-light tracking-[0.25em] text-gray-warm/30 uppercase sm:text-xs">

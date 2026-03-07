@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[85dvh] flex-col items-center justify-center overflow-hidden px-4 py-12 sm:min-h-[90dvh] sm:px-6 sm:py-20">
+    <section className="relative flex min-h-[75dvh] flex-col items-center justify-center overflow-hidden px-4 py-12 sm:min-h-[80dvh] sm:px-6 sm:py-20">
       {/* Ambient radial glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(95,7,19,0.12),transparent_70%)]" />
 
@@ -83,21 +83,56 @@ export default function Hero() {
         >
           MAISAK
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
+          className="mt-14 flex flex-col items-center sm:mt-20"
+        >
+          <img
+            src="/logos/sala_despecho_cream.png"
+            alt="Sala de Despecho"
+            className="w-32 object-contain sm:w-40"
+          />
+          <p className="mt-4 font-body text-xs font-light text-gray-warm/70 sm:text-sm">
+            Miércoles 18 de marzo &middot; 5pm
+          </p>
+          <p className="mt-1 font-body text-xs font-light text-gray-warm/70 sm:text-sm">
+            Cra. 13a #93-91
+          </p>
+        </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
+      {/* Scroll indicator — clickable chevron */}
+      <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 sm:bottom-10"
+        onClick={() =>
+          document
+            .getElementById("mensaje")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 cursor-pointer border-none bg-transparent p-2 sm:bottom-10"
+        aria-label="Scroll down"
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
+        <motion.svg
+          animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="h-8 w-px bg-gradient-to-b from-gold/50 to-transparent"
-        />
-      </motion.div>
+          className="h-6 w-6 text-gold/60 sm:h-7 sm:w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={1.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </motion.svg>
+      </motion.button>
     </section>
   );
 }

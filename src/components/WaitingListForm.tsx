@@ -72,51 +72,42 @@ export default function WaitingListForm() {
   return (
     <section
       id="registro"
-      className="relative flex min-h-[80dvh] flex-col items-center justify-center px-4 py-12 sm:px-6 sm:py-16"
+      className="relative flex flex-col items-center justify-center px-5 py-12 sm:px-6 sm:py-16"
     >
-      {/* Ambient glow behind card */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-[320px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(95,7,19,0.10),transparent_60%)] sm:h-[420px] sm:w-[420px] md:h-[500px] md:w-[500px]" />
-
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.9, ease: "easeOut" }}
-        className="relative z-10 w-full max-w-md px-1"
+        className="relative z-10 w-full max-w-md"
       >
-        {/* Section heading */}
-        <div className="mb-8 text-center sm:mb-10">
-          <motion.div
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mx-auto mb-6 h-px w-16 bg-gold/40"
-          />
-          <h2 className="font-heading text-xl font-semibold text-white-soft sm:text-2xl md:text-3xl">
-            Registro
-          </h2>
-          <p className="mx-auto mt-3 max-w-xs font-body text-sm font-light leading-relaxed text-gray-warm">
-            Regístrate aquí para entrar en la lista
-          </p>
-        </div>
+        {/* Registration container */}
+        <div className="rounded-2xl border border-burgundy/15 bg-gradient-to-b from-[#160707] to-[#100404] px-5 py-8 shadow-[0_8px_40px_rgba(0,0,0,0.5)] sm:px-8 sm:py-10">
+          {/* Section heading */}
+          <div className="mb-6 text-center sm:mb-8">
+            <h2 className="font-heading text-xl font-semibold text-white-soft sm:text-2xl">
+              Registro
+            </h2>
+            <p className="mx-auto mt-2 max-w-xs font-body text-xs font-light leading-relaxed text-gray-warm/70 sm:text-sm">
+              Regístrate aquí para entrar en la lista
+            </p>
+          </div>
 
-        {/* Form card */}
-        <AnimatePresence mode="wait">
-          {!submitted ? (
-            <motion.form
-              key="form"
-              onSubmit={handleSubmit}
-              initial={{ opacity: 1 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4 }}
-              className="rounded-2xl border border-burgundy/20 bg-black-card/90 p-5 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
-            >
+          {/* Form */}
+          <AnimatePresence mode="wait">
+            {!submitted ? (
+              <motion.form
+                key="form"
+                onSubmit={handleSubmit}
+                initial={{ opacity: 1 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+              >
               <div className="space-y-4 sm:space-y-5">
                 <div>
                   <label
                     htmlFor="name"
-                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm uppercase"
+                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm/70 uppercase"
                   >
                     Nombre
                   </label>
@@ -127,14 +118,14 @@ export default function WaitingListForm() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Tu nombre completo"
-                    className="w-full min-h-[48px] rounded-lg border border-white/[0.08] bg-white/[0.03] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/50 outline-none transition-all duration-300 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 [font-size:16px]"
+                    className="w-full min-h-[48px] rounded-lg border border-white/[0.06] bg-white/[0.04] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/40 outline-none transition-all duration-300 focus:border-gold/30 focus:ring-1 focus:ring-gold/15 [font-size:16px]"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm uppercase"
+                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm/70 uppercase"
                   >
                     Email
                   </label>
@@ -145,14 +136,14 @@ export default function WaitingListForm() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="tu@email.com"
-                    className="w-full min-h-[48px] rounded-lg border border-white/[0.08] bg-white/[0.03] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/50 outline-none transition-all duration-300 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 [font-size:16px]"
+                    className="w-full min-h-[48px] rounded-lg border border-white/[0.06] bg-white/[0.04] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/40 outline-none transition-all duration-300 focus:border-gold/30 focus:ring-1 focus:ring-gold/15 [font-size:16px]"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone"
-                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm uppercase"
+                    className="mb-1.5 block text-xs font-light tracking-[0.15em] text-gray-warm/70 uppercase"
                   >
                     WhatsApp
                   </label>
@@ -163,7 +154,7 @@ export default function WaitingListForm() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder="+57 300 000 0000"
-                    className="w-full min-h-[48px] rounded-lg border border-white/[0.08] bg-white/[0.03] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/50 outline-none transition-all duration-300 focus:border-gold/40 focus:ring-1 focus:ring-gold/20 [font-size:16px]"
+                    className="w-full min-h-[48px] rounded-lg border border-white/[0.06] bg-white/[0.04] px-4 py-3 font-body text-base text-white-soft placeholder-gray-warm/40 outline-none transition-all duration-300 focus:border-gold/30 focus:ring-1 focus:ring-gold/15 [font-size:16px]"
                   />
                 </div>
               </div>
@@ -177,7 +168,7 @@ export default function WaitingListForm() {
                 disabled={sending}
                 whileHover={sending ? {} : { scale: 1.02 }}
                 whileTap={sending ? {} : { scale: 0.98 }}
-                className="group relative mt-6 w-full min-h-[48px] cursor-pointer overflow-hidden rounded-lg bg-gradient-to-r from-burgundy via-caramel to-gold py-4 font-body text-sm font-semibold tracking-[0.15em] text-black-deep uppercase transition-shadow duration-300 hover:shadow-lg hover:shadow-burgundy/30 disabled:cursor-wait disabled:opacity-70 active:scale-[0.98] sm:mt-8 sm:py-3.5"
+                className="group relative mt-6 w-full min-h-[48px] cursor-pointer overflow-hidden rounded-lg bg-gradient-to-r from-burgundy via-caramel to-gold py-4 font-body text-sm font-semibold tracking-[0.15em] text-black-deep uppercase transition-shadow duration-300 hover:shadow-lg hover:shadow-burgundy/30 disabled:cursor-wait disabled:opacity-70 active:scale-[0.98] sm:mt-7 sm:py-3.5"
               >
                 <span className="relative z-10">
                   {sending ? "Enviando..." : "Registrarme"}
@@ -191,7 +182,7 @@ export default function WaitingListForm() {
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="rounded-2xl border border-gold/20 bg-black-card/80 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-10"
+              className="py-4 text-center"
             >
               {/* Gold circle check */}
               <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border border-gold/30 bg-gold/10">
@@ -221,7 +212,8 @@ export default function WaitingListForm() {
               </p>
             </motion.div>
           )}
-        </AnimatePresence>
+          </AnimatePresence>
+        </div>
       </motion.div>
     </section>
   );
