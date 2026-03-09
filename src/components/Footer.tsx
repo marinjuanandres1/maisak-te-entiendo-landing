@@ -13,23 +13,27 @@ export default function Footer() {
       </div>
 
       {/* Supporting brands */}
-      <div className="mx-auto mt-8 flex flex-wrap items-center justify-center gap-5 sm:mt-10 sm:gap-7">
+      <div className="mx-auto mt-8 flex items-center justify-center gap-2 sm:mt-10 sm:gap-7">
         <img
           src="/logos/siente_logo.png"
           alt="Siente"
-          className="w-10 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-12"
+          className="w-6 shrink-0 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-12"
         />
         <img
           src="/logos/billboard_logo.png"
           alt="Billboard"
-          className="w-28 object-contain opacity-60 transition-opacity duration-300 hover:opacity-90 sm:w-36"
+          className="w-16 shrink-0 object-contain opacity-60 transition-opacity duration-300 hover:opacity-90 sm:w-36"
+        />
+        <img
+          src="/logos/royalty_records_logo.png"
+          alt="Royalty Records"
+          className="w-16 shrink-0 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-36"
         />
         <img
           src="/logos/touring_logo.png"
           alt="Touring"
-          className="w-28 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-36"
+          className="w-16 shrink-0 object-contain opacity-45 transition-opacity duration-300 hover:opacity-75 sm:w-36"
         />
-
       </div>
 
       <p className="mt-12 text-center font-body text-[10px] font-light tracking-[0.25em] text-gray-warm/30 uppercase sm:text-xs">
