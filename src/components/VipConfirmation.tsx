@@ -109,7 +109,7 @@ export default function VipConfirmation({ guestName }: VipConfirmationProps) {
                 className="mb-3 w-24 object-contain opacity-70 sm:w-28"
               />
               <p className="font-body text-xs font-light text-gray-warm/60 sm:text-sm">
-                Miércoles 18 de marzo &middot; 5pm
+                Miércoles 18 de marzo &middot; 4:30pm
               </p>
               <p className="font-body text-xs font-light text-gray-warm/60 sm:text-sm">
                 Cra. 13a #93-91

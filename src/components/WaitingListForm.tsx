@@ -208,7 +208,7 @@ export default function WaitingListForm() {
                 <br />
                 Cra. 13a #93-91
                 <br />
-                Miércoles 18 de marzo 5pm
+                Miércoles 18 de marzo 4:30pm
               </p>
             </motion.div>
           )}

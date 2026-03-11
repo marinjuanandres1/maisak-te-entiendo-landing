@@ -96,7 +96,7 @@ export default function Hero() {
             className="w-32 object-contain sm:w-40"
           />
           <p className="mt-4 font-body text-xs font-light text-gray-warm/70 sm:text-sm">
-            Miércoles 18 de marzo &middot; 5pm
+            Miércoles 18 de marzo &middot; 4:30pm
           </p>
           <p className="mt-1 font-body text-xs font-light text-gray-warm/70 sm:text-sm">
             Cra. 13a #93-91
