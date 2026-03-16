@@ -20,4 +20,9 @@ export const vipGuests: Record<string, string> = {
   "roberto-cardona": "Roberto Cardona",
   "camila-upegui": "Camila Upegui",
   "tomas-amaya": "Tomas Amaya",
+  "pablo-vargas-salazar": "Pablo Vargas Salazar",
+  "tuti-vargas-salazar": "Tuti Vargas Salazar",
+  "carlos-garzon": "Carlos Garzón",
+  "simon-trujillo": "Simón Trujillo",
+  "maria-jose-amor": "María José Amor",
 };
