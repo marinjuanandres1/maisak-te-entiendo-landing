@@ -60,7 +60,7 @@ export const vipGuests: Record<string, string> = {
   "frank-casallas": "Frank Casallas",
   "juan-camilo-mejia": "Juan Camilo Mejía",
   "laura-buitrago": "Laura Buitrago",
-  "silvia-bernal": "Silvia Bernal",
+  "silvia-bernal": "Silvia Bernal +1",
   "angela-luna-montero": "Ángela Luna Montero",
   "ana-maria-garzon-lozano": "Ana Maria Garzón Lozano",
   "camilo-munoz": "Camilo Muñoz",
