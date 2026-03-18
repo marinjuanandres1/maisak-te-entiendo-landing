@@ -91,4 +91,5 @@ export const vipGuests: Record<string, string> = {
   "bat-hen-schlesinger": "Bat-hen Schlesinger",
   "harold-arnobis-herrera-vizcaino": "Harold Arnobis Herrera Vizcaino",
   "luis-carlos-orozco-gamez": "Luís Carlos Orozco Gámez",
+  "ruben-arias": "Ruben Arias",
 };
